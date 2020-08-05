@@ -1,0 +1,27 @@
+PROGRAM NUMPRIMOS;
+USES CRT;
+VAR NUM,CONT,I,np : LONGINT;
+
+BEGIN
+  CLRSCR;
+  
+FOR I TO 10 DO
+BEGIN
+	 FOR I:=1 TO NUM DO
+	  BEGIN
+			IF NUM MOD I = 0 THEN
+			CONT:=CONT+1;
+		 	END;
+				IF CONT = 2 THEN
+				BEGIN
+				WRITELN(NUM,' : É PRIMO');
+				np:=np+1;
+				END	
+					ELSE
+					WRITELN(NUM,' : NÃO É PRIMO');					
+				
+		NUM:=NUM+1;
+END;
+   
+READKEY;
+END.
